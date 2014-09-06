@@ -6,5 +6,5 @@ Crumblr demo
 
 * Rails 4.0.4
 
-* Dropbox 3.0
+* Bootstrap 3.0
 
