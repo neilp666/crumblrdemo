@@ -11,35 +11,51 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :job_title %><br>
-    <%= f.text_field :job_title %>
+  <h4>Your job listing will remain for 45 days. After 45 days your job listing will expire and be removed.</h4>
+  <br/>
+  <h3><b>1. Tell us about the position.</b></h3>
+  <br/>
+
+  <div class="form-group">
+    <%= f.label "job title" %>
+    <%= f.text_field :job_title, class: "form-control", autofocus: true, placeholder: "E.g Analytics Manager" %>
   </div>
-  <div class="field">
-    <%= f.label :job_location %><br>
-    <%= f.text_field :job_location %>
+  <div class="form-group">
+    <%= f.label "Location" %>
+    <%= f.text_field :job_location, class: "form-control", placeholder: "E.g London" %>
   </div>
-  <div class="field">
-    <%= f.label :job_description %><br>
-    <%= f.text_area :job_description %>
+  <div class="form-group">
+    <%= f.label "Enter job description" %>
+    <%= f.text_area :job_description, class: "form-control" %>
   </div>
-  <div class="field">
-    <%= f.label :job_email %><br>
-    <%= f.text_field :job_email %>
+  <div class="form-group">
+    <%= f.label "How does the candidate apply for this position" %>
+    <%= f.text_field :job_email, class: "form-control", placeholder: "E.g Send a C.V to admin@yourcompany.com" %>
   </div>
-  <div class="field">
-    <%= f.label :company_name %><br>
-    <%= f.text_field :company_name %>
+
+  <h3><b>2. Tell us about your company or recruitment agency</b></h3>
+  <br/>
+
+  <div class="form-group">
+    <%= f.label "Your Company Name" %>
+    <%= f.text_field :company_name, class: "form-control", placeholder: "E.g Google" %>
   </div>
-  <div class="field">
-    <%= f.label :company_website %><br>
-    <%= f.text_field :company_website %>
+  <div class="form-group">
+    <%= f.label "Company Website" %><br>
+    <%= f.text_field :company_website, class: "form-control", placeholder: "www.google.com" %>
   </div>
-  <div class="field">
-    <%= f.label :company_email %><br>
-    <%= f.text_field :company_email %>
+
+  <div class="form-group">
+    <%= f.label "Tell Us About Your Business 25-30 chars max" %>
+    <%= f.text_field :company_website, class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+
+
+  <div class="form-group">
+    <%= f.label "Email address to send the reciept to" %><br>
+    <%= f.text_field :company_email, class: "form-control", placeholder: "E.g John@google.com" %>
+  </div>
+  <div class="form-group">
+    <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>
